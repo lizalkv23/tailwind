@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="dist/style.css" />
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <title>TailWind</title>
+  </head>
+
+  <body>
+    <div class="wrapper overflow-hidden min-h-full">
+      <header class="bg-[#070A1B] pt-7 pb-7 fixed z-50 top-0 left-0 w-full">
+        <div class="container">
+          <div class="grid grid-cols-3 gap-5 
+          md:grid-cols-[minmax(70px,160px)_1fr_160px] sm:grid-cols-2">
+            <img class="w-[32px] h-4 max-w-full self-center cursor-pointer object-contain"src="img/header/burger.svg" alt="burger"/>
+            <img class="max-w-[285px] h-[33px] z-[5] justify-self-center self-center object-contain md:max-w-[180px] sm:hidden" src="img/header/logo.svg" alt="logo"/>
+            <div class="flex justify-end gap-5">
+              <a class="w-10 h-10 rounded-3xl transition duration-500 
+              hover:bg-[#F402A2] flex justify-center items-center" href="#">
+                <img class="max-w-full w-[27]" src="./img/header/google.svg" alt="social"/>
+              </a>
+              <a class="w-10 h-10 rounded-3xl transition duration-500
+               hover:bg-[#F402A2] flex justify-center items-center" href="#">
+                <img class="max-w-full w-[27]" src="./img/header/facebook.svg"
+                  alt="social"/>
+              </a>
+              <a class="w-10 h-10 rounded-3xl transition duration-500 hover:bg-[#F402A2] flex justify-center items-center" href="#">
+                <img class="max-w-full w-[27]" src="./img/header/twitter.svg"
+                  alt="social"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="relative min-h-screen pt-24 hero md:before:absolute md:before:top-0 md:before:h-full md:before:left-0 md:before:w-full md:before:bg-[rgba(30,30,30,0.66)] md:before:z-[2]">
+          <div class="overflow-hidden">
+            <img class="absolute left-0 min-h-screen w-full object-cover rounded-t-[20%] sm:rounded-none " src="img/hero.png" alt="hero" />
+          </div>
+          <div class="w-[50px] h-[50px] absolute bottom-0 left-[50%] translate-y-[50%] translate-x-[-50%] z-[5]" >
+            <img class="max-w-full" src="img/decor.svg" alt="decor" />
+          </div>
+          <div class="relative grid content-end h-screen z-[3] p-[50px] gap-4">
+            <h1 class="text-center text-[72px] leading-[86px] text-white md:text-[35px] md:leading-[46px]" >
+              The VISION AVTR
+            </h1>
+            <div class="text-center text-2xl text-white md:text-[18px] md:leading-[25px]">
+              Inspered by the future
+            </div>
+          </div>
+        </div>
+        <div class=" pb-10">
+          <div class="container overflow-hidden">
+            <h2 class="text-6xl font-semibold pt-20 mb-8 text-[#F402A2]">CONCEPT</h2>
+            <div class="max-w-sm mb-5 text-lg text-white">
+              <p>Электромобильность в гармонии с человеком и природой. Экологичная технология органических аккумуляторов и продуманная
+              операционная стратегия концепт-кара VISION AVTR.</p>
+            </div>
+  <div class=" slider-car swiper">
+    <div class="slider-neon__wrappper swiper-wrapper">
+      <div class="slider-neon__slide swiper-slide">
+        <div class="slider-neon__img" data-swiper-parallax="20%" style="background-image: url('img/block1/1.jpg');">
+        </div>
+      </div>
+      <div class="slider-neon__slide swiper-slide">
+        <div class="slider-neon__img" data-swiper-parallax="30%" style="background-image: url(img/block1/2.jpg);">
+        </div>
+      </div>
+      <div class="slider-neon__slide swiper-slide">
+        <div class="slider-neon__img" data-swiper-parallax="20%" style="background-image: url(img/block1/3.jpg);">
+        </div>
+      </div>
+      <div class="slider-neon__slide swiper-slide">
+        <div class="slider-neon__img" data-swiper-parallax="30%" style="background-image: url(img/block1/1.jpg);">
+        </div>
+      </div>
+      <div class="slider-neon__slide swiper-slide">
+        <div class="slider-neon__img" data-swiper-parallax="30%" style="background-image: url(img/block1/2.jpg);">
+        </div>
+      </div>
+      <div class="slider-neon__slide swiper-slide">
+        <div class="slider-neon__img" data-swiper-parallax="30%" style="background-image: url(img/block1/3.jpg);">
+        </div>
+      </div>
+      <div class="slider-neon__slide swiper-slide">
+        <div class="slider-neon__img" data-swiper-parallax="20%" style="background-image: url(img/block1/2.jpg);">
+        </div>
+      </div>
+    </div>
+      <div class="swiper-scrollbar"></div>
+  </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

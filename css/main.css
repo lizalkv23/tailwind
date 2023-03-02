@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  body::-webkit-scrollbar{
+    width: 0;
+  }
+}
+.container {
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.wrapper {
+  background: linear-gradient(#070a1b 0%, #2a3170 100%);
+}
+h2{
+  font-family: "Poppins", sans-serif;
+}
+.slider-car{
+  overflow: visible;
+}
+.slider-neon__slide {
+  position: relative;
+    height: 50vh;
+      width: 30vw;
+      overflow: hidden;
+      transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1), box-shadow0 0.5s cubic-bezier(0.19, 1, 0.22, 1) !important;
+}
+.slider-neon__img {
+    height: 100%;
+      width: 150%;
+      left: -20%;
+      background-size: cover;
+      position: absolute;
+      z-index: 5;
+      transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1) !important;
+      will-change: transform;
+}
+.swiper-scrollbar{
+  height: 8px !important;
+}
+.swiper-scrollbar div{
+  background-color: #f402a394;
+}
